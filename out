@@ -1,0 +1,53 @@
+Had errors:
+/usr/local/lib/~/reapp-ui/index.js
+Module not found: Error: Cannot resolve module 'react/lib/invariant' in /usr/local/lib/node_modules/reapp-ui
+resolve module react/lib/invariant in /usr/local/lib/node_modules/reapp-ui
+  looking for modules in /Users/nw/projects/reapp/reapp-hn
+    /Users/nw/projects/reapp/reapp-hn/react doesn't exist (module as directory)
+  looking for modules in /usr/local/lib/node_modules
+    /usr/local/lib/node_modules/react doesn't exist (module as directory)
+  looking for modules in /usr/local/lib/node_modules/reapp-ui/node_modules
+    /usr/local/lib/node_modules/reapp-ui/node_modules/react doesn't exist (module as directory)
+[/Users/nw/projects/reapp/reapp-hn/react]
+[/usr/local/lib/node_modules/react]
+[/usr/local/lib/node_modules/reapp-ui/node_modules/react]
+ @ /usr/local/lib/~/reapp-ui/index.js 4:16-46 
+
+
+/usr/local/lib/~/reapp-ui/views/NestedViewList.jsx
+Module not found: Error: Cannot resolve module 'react' in /usr/local/lib/node_modules/reapp-ui/views
+resolve module react in /usr/local/lib/node_modules/reapp-ui/views
+  looking for modules in /Users/nw/projects/reapp/reapp-hn
+    resolve 'file' react in /Users/nw/projects/reapp/reapp-hn
+      resolve file
+        /Users/nw/projects/reapp/reapp-hn/react doesn't exist
+        /Users/nw/projects/reapp/reapp-hn/react.js doesn't exist
+        /Users/nw/projects/reapp/reapp-hn/react.jsx doesn't exist
+    /Users/nw/projects/reapp/reapp-hn/react doesn't exist (module as directory)
+  looking for modules in /usr/local/lib/node_modules/reapp-ui/node_modules
+    /usr/local/lib/node_modules/reapp-ui/node_modules/react doesn't exist (module as directory)
+    resolve 'file' react in /usr/local/lib/node_modules/reapp-ui/node_modules
+      resolve file
+        /usr/local/lib/node_modules/reapp-ui/node_modules/react doesn't exist
+        /usr/local/lib/node_modules/reapp-ui/node_modules/react.js doesn't exist
+        /usr/local/lib/node_modules/reapp-ui/node_modules/react.jsx doesn't exist
+  looking for modules in /usr/local/lib/node_modules
+    /usr/local/lib/node_modules/react doesn't exist (module as directory)
+    resolve 'file' react in /usr/local/lib/node_modules
+      resolve file
+        /usr/local/lib/node_modules/react doesn't exist
+        /usr/local/lib/node_modules/react.js doesn't exist
+        /usr/local/lib/node_modules/react.jsx doesn't exist
+[/Users/nw/projects/reapp/reapp-hn/react]
+[/Users/nw/projects/reapp/reapp-hn/react.js]
+[/Users/nw/projects/reapp/reapp-hn/react.jsx]
+[/Users/nw/projects/reapp/reapp-hn/react]
+[/usr/local/lib/node_modules/reapp-ui/node_modules/react]
+[/usr/local/lib/node_modules/reapp-ui/node_modules/react]
+[/usr/local/lib/node_modules/react]
+[/usr/local/lib/node_modules/react]
+[/usr/local/lib/node_modules/reapp-ui/node_modules/react.js]
+[/usr/local/lib/node_modules/reapp-ui/node_modules/react.jsx]
+[/usr/local/lib/node_modules/react.js]
+[/usr/local/lib/node_modules/react.jsx]
+ @ /usr/local/lib/~/reapp-ui/views/NestedViewList.jsx 3:12-28 

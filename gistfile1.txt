@@ -1,0 +1,43 @@
+{ entry: { main: './app/app.js' },
+  output: 
+   { path: '/Users/nw/projects/reapp/reapp-hn/build/public',
+     filename: '[name].js',
+     chunkFilename: '[id].js',
+     publicPath: '/',
+     sourceMapFilename: 'debugging/[file].map',
+     libraryTarget: undefined,
+     pathinfo: true },
+  target: 'web',
+  module: 
+   { loaders: 
+      [ { test: /\.json$/, loader: 'json-loader' },
+        { test: /\.png|jgp|jpeg|gif|svg$/,
+          loader: 'url-loader?limit=10000' },
+        { test: /\.html$/, loader: 'html-loader' },
+        { test: /\.jsx?$/,
+          loader: '6to5-loader?experimental=true&runtime=true',
+          exclude: /socket\.io/ },
+        { test: /\.css$/,
+          loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 version' },
+        { test: /\.styl$/,
+          loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 version!stylus-loader' } ] },
+  devtool: 'eval',
+  debug: true,
+  resolveLoader: 
+   { root: 
+      [ '/Users/nw/projects/reapp/reapp-hn/node_modules',
+        '/Users/nw/projects/reapp/reapp-hn/server_modules' ],
+     alias: {} },
+  externals: [],
+  resolve: 
+   { root: '/Users/nw/projects/reapp/reapp-hn',
+     modulesDirectories: [ 'node_modules', 'server_modules', 'app' ],
+     extensions: [ '', '.js', '.jsx' ],
+     alias: {} },
+  plugins: 
+   [ { definitions: { to5Runtime: 'imports?global=>{}!exports-loader?global.to5Runtime!6to5/runtime' } },
+     { definitions: { 'process.target': { TARGET: '"client"' } } },
+     { request: 'react' },
+     { request: 'react/lib/ReactComponentBrowserEnvironment' },
+     [Function],
+     {} ] }
